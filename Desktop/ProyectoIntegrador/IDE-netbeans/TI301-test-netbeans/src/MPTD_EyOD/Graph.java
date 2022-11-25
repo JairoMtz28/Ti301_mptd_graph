@@ -39,13 +39,13 @@ public class Graph {
         
         out += "vertices : [";
         for (int i = 0; i < numVertex; i++) {
-            out += i + (i == numVertex - 2 ?"":", ");
+            out += i + (i == numVertex - 1 ?"" : ", ");
         }
         out += "]\n";
         
-        out += "edges : [";
+        out += "aristas : [";
         for (int i = 0; i < numEdge; i++) {
-            out += "(" + edge[i][0] + ", " + edge[i][1] + "), ";
+            out += "(" + edge[i][0] + ", " + edge[i][1] + ")" + (i == numEdge - 1 ? "" : ", ");
         }
         out += "]\n";
         
